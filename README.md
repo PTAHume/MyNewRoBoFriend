@@ -27,12 +27,12 @@
 * Enter a command and press the enter key
 * Start by placing the robo toy on the table  
 
-Example PLACE Command syntaxt:
+Example PLACE Command syntax:
 ```sh
 PLACE X Y ORIENTATION
 ```
 
-Where X is the horiontal location that must be between 0 and 5  
+Where X is the horizontal location that must be between 0 and 5  
 Where Y is the vertical location that must be between 0 and 5  
 Where ORIENTATION must be either:  
 
@@ -46,14 +46,14 @@ Example PLACE Command:
 ```sh
 PLACE 1 2 SOUTH
 ```
-Would place the robo on the table at grid refrance 1 verticaly and 2 horiontaly facing NORTH  
+Would place the robo on the table at grid reference 1 vertically and 2 horizontally facing NORTH  
 
 
-The table grid starts at the bottom left (SOUTH WEST) hand side at 0 verticaly and 0 horiontaly  
-and increasies in incremeants of 1 along the vertical plane to the right (EAST) of the table  
-or increasies in incremeants of 1 along the horizonal plane to the top (NORTH) side of the table  
+The table grid starts at the bottom left (SOUTH WEST) hand side at 0 vertically and 0 horizontally  
+and increases in increments of 1 along the vertical plane to the right (EAST) of the table  
+or increases in increments of 1 along the horizonal plane to the top (NORTH) side of the table  
 
-Illistration of the table layout:
+Illustration of the table layout:
 ```sh
 5      N
 4      |
@@ -63,7 +63,7 @@ Illistration of the table layout:
 0 1 2 3 4 5
 ```
 
-Proceed to issue any of the following commands as many time and in any order you like:
+Proceed to issue any of the following commands as many times and in any order, you like:
 
 ```sh
 RIGHT
@@ -86,7 +86,7 @@ If the robo was facing EAST it would increase along the vertical alignment (X ax
 ```sh
 REPORT
 ```
-Will ouput the robo's current location and directional orientation  
+Will output the robo's current location and directional orientation  
 Example:   
 ```sh
 Output: 1, 1, North
@@ -94,7 +94,7 @@ Output: 1, 1, North
 
 You can even re-issue the PLACE command
 
-Example (Can you guess hwerre the robo will end up?):
+Example (Can you guess where the robo will end up?):
 ```sh
 PLACE 1 1 NORTH
 MOVE
@@ -121,12 +121,12 @@ Rember to press the Enter Key after typing each command
 <!-- Constraints -->
 ## Constraints
 
-The commands do not need to be case sensative but will be ignored if they have leading or trailing spaces  
+The commands do not need to be case sensitive but will be ignored if they have leading or trailing spaces  
 Example (Note the trailing and leading spaces):   
 
 * >  MOVE             
 
-The robo can not fall off the table, so any PLACE or MOVE command that would cause it to fall will simple be ignore 
+The robo cannot fall off the table, so any PLACE or MOVE command that would cause it to fall will simple be ignore 
 
 Example 1:
 ```sh
@@ -139,14 +139,14 @@ MOVE
 ```
 Would both put the robo outside the table area and thusly these commands are ignored.
 
-If no command or an invalid command is issued the robo will ignore theres
+If no command or an invalid command is issued the robo will ignore them
 The robo MUST be placed on the table first using the PLACE command first before any of command can be used!
 
 Expected responses:
 
 * > Please start by placing your Robo-Pet on the table, example: PLACE 0 0 NORTH  
 
-You have tryed to issue a coomand before placing the robo on the table first  
+You have tried to issue a command before placing the robo on the table first  
 Example:
 ```sh
 MOVE
@@ -163,7 +163,7 @@ Example:
 
 * > Please give your Robo-Pet a valid command with no spaces, example: PLACE 0 0 NORTH  
 
-You have given your robo an invalid command check the syntacct matches the expected formate
+You have given your robo an invalid command check the syntax matches the expected format
 Example (Too many spaces):
 ```sh
 PLACE   1    3    NORTH
@@ -173,7 +173,7 @@ Example (Leading space):
    MOVE
 ```
 
-Example (Not a reconised command):
+Example (Not a recognised command):
 ```sh
 FOO 1 2 BAR  
 ```
