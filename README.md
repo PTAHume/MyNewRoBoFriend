@@ -115,7 +115,7 @@ To turn your robo off and exit the applicating simply type:
 END
 ```
 
-Rember to press the Enter Key after typing each command
+Remember to press the Enter Key after typing each command
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Constraints -->
@@ -139,7 +139,7 @@ MOVE
 ```
 Would both put the robo outside the table area and thusly these commands are ignored.
 
-If no command or an invalid command is issued the robo will ignore them
+If no command or an invalid command is issued the robo will ignore them  
 The robo MUST be placed on the table first using the PLACE command first before any of command can be used!
 
 Expected responses:
@@ -163,7 +163,7 @@ Example:
 
 * > Please give your Robo-Pet a valid command with no spaces, example: PLACE 0 0 NORTH  
 
-You have given your robo an invalid command check the syntax matches the expected format
+You have given your robo an invalid command so check the syntax matches the expected format
 Example (Too many spaces):
 ```sh
 PLACE   1    3    NORTH
