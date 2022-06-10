@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./RoBoFriend/
     - name: Build
-      run: dotnet build ./RoBoFriend/RoBoFriend.csproj --no-restore
+      run: dotnet build ./RoBoFriend/RoBoFriend.csproj 
     - name: Test
-      run: dotnet test  ./RoBoFriend/RoBoFriend.sln  --no-restore --no-build --verbosity normal
+      run: dotnet test  ./RoBoTests/RoBoTests.csproj  
